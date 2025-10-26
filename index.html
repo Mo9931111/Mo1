@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>لوحة إدارة الأملاك</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- شريط علوي -->
+  <header class="topbar">
+    <h1>نظام إدارة الأملاك</h1>
+    <nav>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">إضافة عقار</a></li>
+        <li><a href="#">إعدادات الحساب</a></li>
+        <li><a href="#">تسجيل خروج</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- قائمة جانبية -->
+  <aside class="sidebar">
+    <ul>
+      <li><a href="#">جميع العقارات</a></li>
+      <li><a href="#">العقارات المؤجرة</a></li>
+      <li><a href="#">العقارات المتاحة</a></li>
+      <li><a href="#">المستأجرون</a></li>
+      <li><a href="#">التقارير</a></li>
+    </ul>
+  </aside>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="content">
+    <section class="dashboard">
+      <h2>مرحبًا بك!</h2>
+      <p>يمكنك إدارة عقاراتك من هنا.</p>
+
+      <div class="stats">
+        <div class="card">
+          <h3>إجمالي العقارات</h3>
+          <span class="number">15</span>
+        </div>
+        <div class="card">
+          <h3>المؤجر</h3>
+          <span class="number">8</span>
+        </div>
+        <div class="card">
+          <h3>المتاح</h3>
+          <span class="number">7</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="property-list">
+      <h2>العقارات</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>الاسم</th>
+            <th>الموقع</th>
+            <th>الحالة</th>
+            <th>إجراءات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>شقة في الرياض</td>
+            <td>الرياض، السعودية</td>
+            <td><span class="status rented">مؤجرة</span></td>
+            <td>
+              <button>تعديل</button>
+              <button>حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>فيلا في جدة</td>
+            <td>جدة، السعودية</td>
+            <td><span class="status available">متاحة</span></td>
+            <td>
+              <button>تعديل</button>
+              <button>حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
